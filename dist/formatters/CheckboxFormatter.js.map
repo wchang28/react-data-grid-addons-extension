@@ -1,0 +1,1 @@
+{"version":3,"file":"CheckboxFormatter.js","sourceRoot":"","sources":["../../src/formatters/CheckboxFormatter.tsx"],"names":[],"mappings":";;;;;AAAA,gDAA0B;AAE1B,mBAAe,UAAC,KAAuB;IACnC,IAAM,IAAI,GAAG,CAAC,KAAK,CAAC,KAAK,CAAC,CAAC,CAAC,QAAQ,CAAC,CAAC,CAAC,QAAQ,CAAC,CAAC;IACjD,OAAO,wCAAM,KAAK,EAAE,EAAC,QAAQ,EAAC,OAAO,EAAC,IAAG,IAAI,CAAQ,CAAC;AAC1D,CAAC,EAAC"}
