@@ -7,7 +7,7 @@ declare class CheckboxEditor extends React.Component<EditorProps<boolean>, State
     private input;
     constructor(props: any);
     getValue(): any;
-    getInputNode(): HTMLDivElement;
+    getInputNode(): HTMLDivElement | null;
     handleChangeComplete: () => void;
     handleClick: () => void;
     handleKeyPress: (e: KeyboardEvent<HTMLDivElement>) => void;

@@ -9,7 +9,7 @@ declare class NumericInputEditor extends React.Component<Props, State> {
     private input;
     constructor(props: any);
     getValue(): any;
-    getInputNode(): HTMLInputElement;
+    getInputNode(): HTMLInputElement | null;
     handleChange: (e: ChangeEvent<HTMLInputElement>) => void;
     render(): JSX.Element;
 }
