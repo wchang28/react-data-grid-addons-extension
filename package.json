@@ -14,10 +14,10 @@
   "author": "Wen Chang",
   "license": "MIT",
   "dependencies": {
-    "@types/react": "^16.9.35",
     "react": "^16.13.1"
   },
   "devDependencies": {
+    "@types/react": "^16.9.35",
     "typescript": "^3.9.5"
   }
 }
