@@ -1,5 +1,5 @@
 import React, { KeyboardEvent } from 'react';
-import { EditorProps } from "./types";
+import { EditorProps } from "../common/types";
 interface State {
     value?: boolean | null;
 }

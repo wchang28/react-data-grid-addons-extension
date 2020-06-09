@@ -1,5 +1,4 @@
 /// <reference types="react" />
-declare const _default: (props: {
-    value: boolean;
-}) => JSX.Element;
+import { FormatterProps } from "../common/types";
+declare const _default: (props: FormatterProps<boolean>) => JSX.Element;
 export default _default;

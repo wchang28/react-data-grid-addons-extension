@@ -1,5 +1,6 @@
 import React, {RefObject, ChangeEvent} from 'react';
-import {EditorProps, WithMinMaxStep} from "./types";
+import {EditorProps} from "../common/types";
+import {WithMinMaxStep} from "./types";
 
 interface State {
     value?: number | null;

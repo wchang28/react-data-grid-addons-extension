@@ -1,7 +1,7 @@
 {
   "name": "react-data-grid-addons-extension",
-  "version": "1.0.0",
-  "description": "ReactDataGrid Addons Extension",
+  "version": "1.0.1",
+  "description": "ReactDataGrid Addons Extension for react-data-grid@6.x.x",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {

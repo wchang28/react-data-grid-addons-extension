@@ -17,6 +17,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
+var utils_1 = require("../common/utils");
 var CheckboxEditor = /** @class */ (function (_super) {
     __extends(CheckboxEditor, _super);
     function CheckboxEditor(props) {
@@ -52,9 +53,9 @@ var CheckboxEditor = /** @class */ (function (_super) {
     };
     CheckboxEditor.prototype.render = function () {
         var backgroundColor = "#eeeeee";
-        var char = (this.state.value ? '\u2611' : '\u2610');
+        var _a = utils_1.getCheckboxUI(this.state.value), unicodeChar = _a.unicodeChar, fontSize = _a.fontSize;
         return (react_1.default.createElement("div", { tabIndex: 0, ref: this.input, onKeyPress: this.handleKeyPress, style: { position: "relative", backgroundColor: backgroundColor } },
-            react_1.default.createElement("span", { onClick: this.handleClick, style: { fontSize: "1.5em", margin: 0, position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", cursor: "pointer" } }, char)));
+            react_1.default.createElement("span", { onClick: this.handleClick, style: { fontSize: fontSize, margin: 0, position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", cursor: "pointer" } }, unicodeChar)));
     };
     return CheckboxEditor;
 }(react_1.default.Component));

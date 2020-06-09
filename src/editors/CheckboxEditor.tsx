@@ -1,5 +1,6 @@
 import React, {RefObject, KeyboardEvent} from 'react';
-import {EditorProps} from "./types";
+import {EditorProps} from "../common/types";
+import {getCheckboxUI} from "../common/utils";
 
 interface State {
     value?: boolean | null;
@@ -38,10 +39,10 @@ class CheckboxEditor extends React.Component<EditorProps<boolean>, State> {
     };
     render() {
         const backgroundColor = "#eeeeee";
-        const char = (this.state.value ? '\u2611' : '\u2610');
+        const {unicodeChar, fontSize} = getCheckboxUI(this.state.value);
         return (
             <div tabIndex={0} ref={this.input} onKeyPress={this.handleKeyPress} style={{position: "relative", backgroundColor}}>
-                <span onClick={this.handleClick} style={{fontSize:"1.5em", margin: 0, position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", cursor:"pointer"}}>{char}</span>                
+                <span onClick={this.handleClick} style={{fontSize, margin: 0, position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", cursor:"pointer"}}>{unicodeChar}</span>                
             </div>
         );
     }

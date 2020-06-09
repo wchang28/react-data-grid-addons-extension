@@ -4,8 +4,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
+var utils_1 = require("../common/utils");
 exports.default = (function (props) {
-    var char = (props.value ? '\u2611' : '\u2610');
-    return react_1.default.createElement("span", { style: { fontSize: "1.5em" } }, char);
+    var _a = utils_1.getCheckboxUI(props.value), unicodeChar = _a.unicodeChar, fontSize = _a.fontSize;
+    return (react_1.default.createElement("span", { style: { fontSize: fontSize } }, unicodeChar));
 });
 //# sourceMappingURL=CheckboxFormatter.js.map
