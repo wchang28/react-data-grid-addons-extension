@@ -1,4 +1,4 @@
-import React, {RefObject, KeyboardEvent} from 'react';
+import * as React from 'react';
 import {EditorProps} from "../common/types";
 import {getCheckboxUI} from "../common/utils";
 
@@ -6,8 +6,8 @@ interface State {
     value?: boolean | null;
 }
 
-class CheckboxEditor extends React.Component<EditorProps<boolean>, State> {
-    private input: RefObject<HTMLDivElement>;
+export class CheckboxEditor extends React.Component<EditorProps<boolean>, State> {
+    private input: React.RefObject<HTMLDivElement>;
     constructor(props: any) {
         super(props);
         this.input = React.createRef();
@@ -32,7 +32,7 @@ class CheckboxEditor extends React.Component<EditorProps<boolean>, State> {
     handleClick = () => {
         this.handleChangeComplete();
     };
-    handleKeyPress = (e: KeyboardEvent<HTMLDivElement>) => {
+    handleKeyPress = (e: React.KeyboardEvent<HTMLDivElement>) => {
         if (e.key === " ") {
             this.handleChangeComplete();
         }
@@ -47,5 +47,3 @@ class CheckboxEditor extends React.Component<EditorProps<boolean>, State> {
         );
     }
 }
-
-export default CheckboxEditor;

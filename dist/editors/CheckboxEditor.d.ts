@@ -1,16 +1,16 @@
-import React, { KeyboardEvent } from 'react';
+import * as React from 'react';
 import { EditorProps } from "../common/types";
 interface State {
     value?: boolean | null;
 }
-declare class CheckboxEditor extends React.Component<EditorProps<boolean>, State> {
+export declare class CheckboxEditor extends React.Component<EditorProps<boolean>, State> {
     private input;
     constructor(props: any);
     getValue(): any;
     getInputNode(): HTMLDivElement | null;
     handleChangeComplete: () => void;
     handleClick: () => void;
-    handleKeyPress: (e: KeyboardEvent<HTMLDivElement>) => void;
+    handleKeyPress: (e: React.KeyboardEvent<HTMLDivElement>) => void;
     render(): JSX.Element;
 }
-export default CheckboxEditor;
+export {};

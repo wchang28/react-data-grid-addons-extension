@@ -1,4 +1,4 @@
-import React, { ChangeEvent } from 'react';
+import * as React from 'react';
 import { EditorProps } from "../common/types";
 import { WithMinMaxStep } from "./types";
 interface State {
@@ -6,12 +6,12 @@ interface State {
 }
 interface Props extends EditorProps<string>, WithMinMaxStep {
 }
-declare class DateInputEditor extends React.Component<Props, State> {
+export declare class DateInputEditor extends React.Component<Props, State> {
     private input;
     constructor(props: any);
     getValue(): any;
     getInputNode(): HTMLInputElement | null;
-    handleChange: (e: ChangeEvent<HTMLInputElement>) => void;
+    handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     render(): JSX.Element;
 }
-export default DateInputEditor;
+export {};

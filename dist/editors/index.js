@@ -1,13 +1,10 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CheckboxEditor = exports.NumericInputEditor = exports.DateInputEditor = void 0;
-var DateInputEditor_1 = __importDefault(require("./DateInputEditor"));
-exports.DateInputEditor = DateInputEditor_1.default;
-var NumericInputEditor_1 = __importDefault(require("./NumericInputEditor"));
-exports.NumericInputEditor = NumericInputEditor_1.default;
-var CheckboxEditor_1 = __importDefault(require("./CheckboxEditor"));
-exports.CheckboxEditor = CheckboxEditor_1.default;
+var DateInputEditor_1 = require("./DateInputEditor");
+Object.defineProperty(exports, "DateInputEditor", { enumerable: true, get: function () { return DateInputEditor_1.DateInputEditor; } });
+var NumericInputEditor_1 = require("./NumericInputEditor");
+Object.defineProperty(exports, "NumericInputEditor", { enumerable: true, get: function () { return NumericInputEditor_1.NumericInputEditor; } });
+var CheckboxEditor_1 = require("./CheckboxEditor");
+Object.defineProperty(exports, "CheckboxEditor", { enumerable: true, get: function () { return CheckboxEditor_1.CheckboxEditor; } });
 //# sourceMappingURL=index.js.map

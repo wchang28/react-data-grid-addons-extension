@@ -12,11 +12,9 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-var react_1 = __importDefault(require("react"));
+exports.CheckboxEditor = void 0;
+var React = require("react");
 var utils_1 = require("../common/utils");
 var CheckboxEditor = /** @class */ (function (_super) {
     __extends(CheckboxEditor, _super);
@@ -34,7 +32,7 @@ var CheckboxEditor = /** @class */ (function (_super) {
                 _this.handleChangeComplete();
             }
         };
-        _this.input = react_1.default.createRef();
+        _this.input = React.createRef();
         _this.state = {
             value: _this.props.value
         };
@@ -54,10 +52,10 @@ var CheckboxEditor = /** @class */ (function (_super) {
     CheckboxEditor.prototype.render = function () {
         var backgroundColor = "#eeeeee";
         var _a = utils_1.getCheckboxUI(this.state.value), unicodeChar = _a.unicodeChar, fontSize = _a.fontSize;
-        return (react_1.default.createElement("div", { tabIndex: 0, ref: this.input, onKeyPress: this.handleKeyPress, style: { position: "relative", backgroundColor: backgroundColor } },
-            react_1.default.createElement("span", { onClick: this.handleClick, style: { fontSize: fontSize, margin: 0, position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", cursor: "pointer" } }, unicodeChar)));
+        return (React.createElement("div", { tabIndex: 0, ref: this.input, onKeyPress: this.handleKeyPress, style: { position: "relative", backgroundColor: backgroundColor } },
+            React.createElement("span", { onClick: this.handleClick, style: { fontSize: fontSize, margin: 0, position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", cursor: "pointer" } }, unicodeChar)));
     };
     return CheckboxEditor;
-}(react_1.default.Component));
-exports.default = CheckboxEditor;
+}(React.Component));
+exports.CheckboxEditor = CheckboxEditor;
 //# sourceMappingURL=CheckboxEditor.js.map

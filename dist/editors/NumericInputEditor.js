@@ -12,11 +12,9 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-var react_1 = __importDefault(require("react"));
+exports.NumericInputEditor = void 0;
+var React = require("react");
 var NumericInputEditor = /** @class */ (function (_super) {
     __extends(NumericInputEditor, _super);
     function NumericInputEditor(props) {
@@ -24,7 +22,7 @@ var NumericInputEditor = /** @class */ (function (_super) {
         _this.handleChange = function (e) {
             _this.setState({ value: e.target.valueAsNumber });
         };
-        _this.input = react_1.default.createRef();
+        _this.input = React.createRef();
         _this.state = {
             value: _this.props.value
         };
@@ -42,9 +40,9 @@ var NumericInputEditor = /** @class */ (function (_super) {
     };
     NumericInputEditor.prototype.render = function () {
         var value = (this.state.value === null ? undefined : this.state.value);
-        return (react_1.default.createElement("input", { type: "number", ref: this.input, value: value, min: this.props.min, max: this.props.max, step: this.props.step, onChange: this.handleChange }));
+        return (React.createElement("input", { type: "number", ref: this.input, value: value, min: this.props.min, max: this.props.max, step: this.props.step, onChange: this.handleChange }));
     };
     return NumericInputEditor;
-}(react_1.default.Component));
-exports.default = NumericInputEditor;
+}(React.Component));
+exports.NumericInputEditor = NumericInputEditor;
 //# sourceMappingURL=NumericInputEditor.js.map

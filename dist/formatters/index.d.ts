@@ -1,2 +1,2 @@
-import CheckboxFormatter from "./CheckboxFormatter";
+import { CheckboxFormatter } from "./CheckboxFormatter";
 export { CheckboxFormatter };

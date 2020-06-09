@@ -1,4 +1,4 @@
-import React, {RefObject, ChangeEvent} from 'react';
+import * as React from 'react';
 import {EditorProps} from "../common/types";
 import {WithMinMaxStep} from "./types";
 
@@ -9,8 +9,8 @@ interface State {
 interface Props extends EditorProps<number>, WithMinMaxStep {
 }
 
-class NumericInputEditor extends React.Component<Props, State> {
-    private input: RefObject<HTMLInputElement>;
+export class NumericInputEditor extends React.Component<Props, State> {
+    private input: React.RefObject<HTMLInputElement>;
     constructor(props: any) {
         super(props);
         this.input = React.createRef<HTMLInputElement>();
@@ -28,7 +28,7 @@ class NumericInputEditor extends React.Component<Props, State> {
     getInputNode() {
         return this.input.current;
     }
-    handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         this.setState({ value: e.target.valueAsNumber });
     }
     render() {
@@ -38,5 +38,3 @@ class NumericInputEditor extends React.Component<Props, State> {
         );
     }
 }
-
-export default NumericInputEditor;
