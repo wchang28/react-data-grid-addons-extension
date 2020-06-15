@@ -9,3 +9,4 @@ export interface EditorComponent<IN = HTMLElement> extends React.Component {
 }
 
 export {Editors, Formatters};
+export * from "./common/types";

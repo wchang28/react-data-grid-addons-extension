@@ -7,3 +7,4 @@ export interface EditorComponent<IN = HTMLElement> extends React.Component {
     disableContainerStyles?: () => boolean;
 }
 export { Editors, Formatters };
+export * from "./common/types";
