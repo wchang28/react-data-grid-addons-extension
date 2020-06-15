@@ -1,4 +1,5 @@
 import { DateInputEditor } from "./DateInputEditor";
 import { NumericInputEditor } from "./NumericInputEditor";
 import { CheckboxEditor } from "./CheckboxEditor";
-export { DateInputEditor, NumericInputEditor, CheckboxEditor };
+import { TextInputEditor } from "./TextInputEditor";
+export { DateInputEditor, NumericInputEditor, CheckboxEditor, TextInputEditor };

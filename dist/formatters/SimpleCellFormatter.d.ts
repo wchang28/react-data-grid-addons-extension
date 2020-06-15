@@ -3,5 +3,5 @@ import { FormatterProps } from "../common/types";
 declare type ReactProps<P = unknown> = Readonly<P> & Readonly<{
     children?: ReactNode;
 }>;
-export declare function CheckboxFormatter(props: ReactProps<FormatterProps<boolean>>): JSX.Element;
+export declare function SimpleCellFormatter(props: ReactProps<FormatterProps<any>>): JSX.Element;
 export {};
