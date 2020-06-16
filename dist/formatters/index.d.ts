@@ -1,3 +1,4 @@
 import { CheckboxFormatter } from "./CheckboxFormatter";
 import { SimpleCellFormatter } from "./SimpleCellFormatter";
-export { CheckboxFormatter, SimpleCellFormatter };
+import { PropertyBasedFormatter } from "./PropertyBasedFormatter";
+export { CheckboxFormatter, SimpleCellFormatter, PropertyBasedFormatter };
